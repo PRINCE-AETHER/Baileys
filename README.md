@@ -5,7 +5,7 @@
 This library was originally a project for **CS-2362 at Ashoka University** and is in no way affiliated with or endorsed by WhatsApp. Use at your own discretion. Do not spam people with this. We discourage any stalkerware, bulk or automated messaging usage. 
 
 #### Liability and License Notice
-Baileys and its maintainers cannot be held liable for misuse of this application, as stated in the [MIT license](https://github.com/WhiskeySockets/Baileys/blob/master/LICENSE).
+Baileys and its maintainers cannot be held liable for misuse of this application, as stated in the [MIT license](https://github.com/PRINCE-AETHER/Baileys/blob/master/LICENSE).
 The maintainers of Baileys do not in any way condone the use of this application in practices that violate the Terms of Service of WhatsApp. The maintainers of this application call upon the personal responsibility of its users to use this application in a fair way, as it is intended to be used.
 ##
 
@@ -13,12 +13,6 @@ Baileys does not require Selenium or any other browser to be interface with What
 Not running Selenium or Chromimum saves you like **half a gig** of ram :/ 
 Baileys supports interacting with the multi-device & web versions of WhatsApp.
 Thank you to [@pokearaujo](https://github.com/pokearaujo/multidevice) for writing his observations on the workings of WhatsApp Multi-Device. Also, thank you to [@Sigalor](https://github.com/sigalor/whatsapp-web-reveng) for writing his observations on the workings of WhatsApp Web and thanks to [@Rhymen](https://github.com/Rhymen/go-whatsapp/) for the __go__ implementation.
- 
-## Please Read
-
-The original repository had to be removed by the original author - we now continue development in this repository here.
-This is the only official repository and is maintained by the community.
- **Join the Discord [here](https://discord.gg/WeJM5FP9GG)**
  
 ## Example
 
@@ -354,15 +348,15 @@ const sentMsg  = await sock.sendMessage(
 // send a contact!
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Jeff Singh\n' // full name
-            + 'ORG:Ashoka Uni;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=911234567890:+91 12345 67890\n' // WhatsApp ID + phone number
+            + 'FN:AETHER\n' // full name
+            + 'ORG:AETHERz;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=6285798045817:+62 857 9804 5817\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 const sentMsg  = await sock.sendMessage(
     id,
     { 
         contacts: { 
-            displayName: 'Jeff', 
+            displayName: 'AETHER', 
             contacts: [{ vcard }] 
         }
     }
@@ -386,7 +380,7 @@ const sendMsg = await sock.sendMessage(id, reactionMessage)
 4. Send a link:
 ``` ts
 // send a link
-const sentMsg  = await sock.sendMessage(id, { text: 'Hi, this was sent using https://github.com/adiwajshing/baileys' })
+const sentMsg  = await sock.sendMessage(id, { text: 'Hi, this was sent using https://github.com/PRINCE-AETHER/Baileys' })
 ```
 
 ### Media Messages
